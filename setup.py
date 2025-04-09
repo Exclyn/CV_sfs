@@ -10,7 +10,7 @@ setup(
         'matplotlib',
         'scipy'
     ],
-    author='Your Name',
+    author='Denzel Lupheng',
     description='A project for 3D reconstruction from single images using shape-from-shading.',
     url='https://github.com/yourusername/3d_reconstruction',
 )
