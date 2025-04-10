@@ -16,7 +16,7 @@ This project implements a pipeline that reconstructs 3D surfaces from single 2D 
 Clone the repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/yourusername/3d_reconstruction.git
+git clone https://https://github.com/Exclyn/CV_sfs
 cd 3d_reconstruction
 pip install -r requirements.txt
 ```

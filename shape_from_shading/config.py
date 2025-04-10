@@ -1,5 +1,5 @@
 # config.py
-# Global configuration parameters for the project
+# Configuration parameters
 
 # Preprocessing parameters
 CLAHE_CLIP_LIMIT = 2.0

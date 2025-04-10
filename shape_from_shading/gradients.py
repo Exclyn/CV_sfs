@@ -4,8 +4,8 @@ import numpy as np
 
 def compute_gradients(gray_norm):
     """
-    Compute x and y gradients using the Sobel operator.
+    Compute image gradients using the Scharr operator.
     """
-    gx = cv2.Sobel(gray_norm, cv2.CV_32F, 1, 0, ksize=5)
-    gy = cv2.Sobel(gray_norm, cv2.CV_32F, 0, 1, ksize=5)
+    gx = cv2.Scharr(gray_norm, cv2.CV_32F, 1, 0)
+    gy = cv2.Scharr(gray_norm, cv2.CV_32F, 0, 1)
     return gx, gy
