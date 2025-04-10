@@ -28,11 +28,15 @@ pip install -r requirements.txt
 
 ## Usage (CLI)
 To run the reconstruction pipeline via Python:
+```
 python main.py --image_path path/to/your/image.jpg
+```
 
 ## Streamlit Web App
 You can also run the app interactively using Streamlit:
+```
 streamlit run streamlit_app.py
+```
 Then upload an image in your browser and explore the 3D result!
 
 ## Project Structure
@@ -53,10 +57,10 @@ CV_sfs/
     └── visualization.py        # Plotly-based 3D rendering
 ``` 
 
-## ⚠ Limitations
-Assumes evenly lit grayscale-compatible images.
+##  Limitations
+- Assumes evenly lit grayscale-compatible images.
 
-Depth estimation is relative, not metric.
+- Depth estimation is relative, not metric.
 
-Texture is per-vertex only — no reflectance modeling or shadow handling.
+- Texture is per-vertex only — no reflectance modeling or shadow handling.
 
