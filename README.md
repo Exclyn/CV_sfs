@@ -1,15 +1,13 @@
-# 3D Reconstruction from Single Image
+# 3D Reconstruction from a Single Image (Using Plotly)
 
-This project implements a pipeline that reconstructs 3D surfaces from single 2D images using shape-from-shading techniques. The process includes image preprocessing, gradient computation, gradient integration (Frankot-Chellappa), shape detection, texture mapping, and 3D visualization.
+This project demonstrates a shape-from-shading pipeline that reconstructs a 3D surface from a single 2D image. The workflow includes:
 
-## Features
-
-- **Preprocessing:** Enhances contrast using CLAHE and performs edge-aware smoothing.
-- **Gradient Computation:** Computes gradients using the Sobel operator.
-- **Integration:** Implements the Frankot-Chellappa algorithm for robust gradient integration.
-- **Shape Detection:** Detects common shapes in the image to isolate the object.
-- **Texture Mapping:** Maps the original image colors onto the reconstructed 3D surface.
-- **Visualization:** 3D visualization using Matplotlib.
+1. **Preprocessing:** CLAHE and bilateral filtering to enhance and smooth the image.
+2. **Gradient Computation:** Using the Scharr operator for robust gradients.
+3. **Integration:** Frankot-Chellappa method to compute a depth map from gradients.
+4. **Shape Detection:** Identifies a dominant shape (circle, triangle, quadrilateral, or ellipse) to isolate the object.
+5. **Masking & Texturing:** Applies the shape mask and extracts per-pixel colors for 3D mesh vertices.
+6. **Interactive 3D Visualization:** Plotly’s `Mesh3d` is used to provide an interactive, hardware-accelerated 3D mesh.
 
 ## Installation
 
