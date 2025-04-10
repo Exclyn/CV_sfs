@@ -36,7 +36,7 @@ streamlit run streamlit_app.py
 Then upload an image in your browser and explore the 3D result!
 
 ## Project Structure
-
+```
 CV_sfs/
 │
 ├── main.py                     # Command-line pipeline runner
@@ -51,7 +51,7 @@ CV_sfs/
     ├── shape_detection.py      # Circle/polygon mask detection
     ├── texturing.py            # RGB texture preparation
     └── visualization.py        # Plotly-based 3D rendering
-    
+``` 
 
 ## ⚠ Limitations
 Assumes evenly lit grayscale-compatible images.
